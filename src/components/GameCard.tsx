@@ -20,6 +20,7 @@ const GameCard = ({ game }: Props) => {
       <Box height="200px" overflow="hidden">
         <Image
           src={getCorrptedImageUrl(game.background_image)}
+          // src={game.background_image}
           objectFit="cover"
           width="100%"
           height="100%"

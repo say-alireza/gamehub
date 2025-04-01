@@ -1,22 +1,44 @@
+import { Card, CardBody, Heading, Image, Flex, Box, HStack } from "@chakra-ui/react";
 import { Game } from "../hooks/useGames";
-import { Card, CardBody, Heading, Image } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
+import CriticScore from "./CriticScore";
+
 interface Props {
   game: Game;
 }
+
 const GameCard = ({ game }: Props) => {
   return (
-    <Card borderEndRadius={10} overflow="hidden">
-      <Image src={game.background_image} />
-      <CardBody minHeight="120px">
-        {" "}
-        {/* Adjust pixel value as needed */}
-        <Heading fontSize="2xl" noOfLines={2}>
-          {" "}
-          {/* Limit to 2 lines */}
-          {game.name}
-        </Heading>
-        <PlatformIconList   platforms={game.parent_platforms} />
+    <Card
+      borderRadius={10}
+      overflow="hidden"
+      height="100%" 
+      display="flex" 
+      flexDirection="column"
+    >
+      <Box height="200px" overflow="hidden">
+        <Image
+          src={game.background_image}
+          objectFit="cover"
+          width="100%"
+          height="100%"
+          alt={game.name}
+        />
+      </Box>
+
+      <CardBody flex={1} display="flex" flexDirection="column" p={3}>
+        <Flex direction="column" height="100%">
+          <Heading fontSize="lg" noOfLines={2} mb={2} flexShrink={0}>
+            {game.name}
+          </Heading>
+
+          <Box flex={1} minHeight="20px" />
+
+          <HStack justifyContent="space-between" alignItems="center" mt={2}>
+            <PlatformIconList platforms={game.parent_platforms} spacing={2} />
+            <CriticScore score={game.metacritic} />
+          </HStack>
+        </Flex>
       </CardBody>
     </Card>
   );

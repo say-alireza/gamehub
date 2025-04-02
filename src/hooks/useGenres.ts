@@ -5,7 +5,7 @@ interface Genre
 {
     id:number;
     name:string;
-    background_image:string;
+    image_background:string;
 
 }
 interface fetchGenresResponse
@@ -23,10 +23,10 @@ const useGenres = () => {
              setLoading(true)
              
              apiClient
-             .get<fetchGenresResponse>("/games", {
-               params: {
-                 fields: "name,background_image,parent_platforms", 
-               },
+             .get<fetchGenresResponse>("/genres", {
+              //  params: {
+              //    fields: "name,background_image,parent_platforms", 
+              //  },
                signal: controller.signal,
              })
              .then((res) => {

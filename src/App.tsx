@@ -1,28 +1,33 @@
-import { useState } from 'react'
-import {  Grid, GridItem, Show } from '@chakra-ui/react'
+import { Grid, GridItem, Show } from '@chakra-ui/react'
 import './App.css'
 import Navbar from './components/Navbar'
 import GameGrid from './components/GameGrid'
+import GenereList from './components/GenereList'
 
 function App() {
   return (
     <>
-    <Grid templateAreas={{
-      base:`"nav""main"`,
-      lg : `"nav nav " "aside main"`,
-    }}>
-      <GridItem area="nav" bg="">
-
-        <Navbar/>
-      </GridItem>
-      <Show above='lg'>
-      <GridItem area="aside" bg="gold">Aside</GridItem>
-      </Show>
-      <GridItem area="main" bg="">
-        <GameGrid/>
-      </GridItem>
-
-    </Grid>
+      <Grid templateAreas={{
+        base: `"nav" "main"`,
+        md: `"nav nav" "aside main"`,
+      }}
+      templateColumns={{
+        base: "1fr",
+        md: "200px 1fr"
+      }}
+      >
+        <GridItem area="nav">
+          <Navbar/>
+        </GridItem>
+        <Show above="md">
+          <GridItem area="aside" paddingX={5}>
+            <GenereList/>
+          </GridItem>
+        </Show>
+        <GridItem area="main">
+          <GameGrid/>
+        </GridItem>
+      </Grid>
     </>
   )
 }

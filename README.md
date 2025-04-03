@@ -26,34 +26,11 @@ To run this project locally:
 1. Clone the repository:
    ```sh
    git clone https://github.com/your-username/game-shop.git
-Navigate to the project directory:
 
-sh
-Copy
-Edit
-cd game-shop
-Install dependencies:
-
-sh
-Copy
-Edit
-npm install
-Create a .env file and add your RAWG API key:
-
-sh
-Copy
-Edit
-REACT_APP_RAWG_API_KEY=your_api_key_here
-Start the development server:
-
-sh
-Copy
-Edit
-npm start
-Screenshots
+# Screenshots
 (Screenshots will be added soon)
 
-Status
+# Status
 🚧 This project is still in development.
 
 New features and improvements are being added regularly.
@@ -98,38 +75,12 @@ A modern game shop website built with React, powered by RAWG.io's API.
 
 ### Prerequisites
 - Node.js (v14+)
-- npm or yarn
+- npm 
 - RAWG API key (free tier available)
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/game-shop.git
-   cd game-shop
-Install dependencies:
 
 
-npm install
-# or
-yarn install
-Create .env file:
-
-REACT_APP_RAWG_API_KEY=your_api_key_here
-Run the development server:
-
-
-npm start
-# or
-yarn start
-📸 Screenshots
-Feature	Preview
-Home Page	Home
-Game Details	Details
-Search	Search
-(Replace placeholder images with actual screenshots)
-
-#🔧 Project Structure
+## 🔧 Project Structure
 game-shop/
 ├── public/          # Static files
 ├── src/
@@ -143,7 +94,7 @@ game-shop/
 │   └── index.js     # Entry point
 ├── .env.example     # Environment variables template
 └── package.json     # Project dependencies
-#🌱 Future Improvements
+## 🌱 Future Improvements
 Add user authentication
 
 Implement shopping cart functionality
@@ -152,7 +103,7 @@ Add game trailers section
 
 Include user reviews system
 
-#🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
 Fork the project

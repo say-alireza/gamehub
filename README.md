@@ -31,7 +31,13 @@ A modern game shop website built with React, powered by RAWG.io's API.
 - Node.js (v14+)
 - npm 
 - RAWG API key (free tier available)
-
+ ## 🛠 Installation
+1. Clone the repository: `git clone https://github.com/your-username/game-shop.git`
+2. Navigate to project: `cd game-shop`
+3. Install dependencies: `npm install` or `yarn install`
+4. Create `.env` file and add your API key: `REACT_APP_RAWG_API_KEY=your_api_key_here`
+5. Start development server: `npm start` or `yarn start`
+6. Open in browser: [http://localhost:3000](http://localhost:3000)
 
 
 ## 🔧 Project Structure

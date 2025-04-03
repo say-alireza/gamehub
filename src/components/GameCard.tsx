@@ -28,7 +28,7 @@ const GameCard = ({ game }: Props) => {
         />
       </Box>
 
-      <CardBody flex={1} display="flex" flexDirection="column" p={3}>
+      <CardBody flex={1} display="flex" flexDirection="column"  p={3}>
         <Flex direction="column" height="100%">
           <Heading fontSize="lg" noOfLines={2} mb={2} flexShrink={0}>
             {game.name}

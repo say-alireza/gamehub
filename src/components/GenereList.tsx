@@ -2,7 +2,6 @@ import { List, ListItem, Image, Text, Box, HStack, Spinner, Button } from "@chak
 import useGenres from "../hooks/useGenres";
 import {Genre} from  "../hooks/types"
 import getCroppedImageUrl from "../Services/image-url";
-import { link } from "framer-motion/client";
 
 interface Props
 {

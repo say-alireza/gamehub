@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+Game Shop - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+This project is a game shop website built using React, inspired by RAWG.io. The application fetches data from RAWG's API to display detailed information about video games, including their genres, ratings, platforms, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
+Browse and search for video games.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+View detailed information about each game.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Responsive design for a seamless experience across different devices.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Dynamic data fetching from RAWG API.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Technologies Used
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+React.js
+
+React Router
+
+Axios (for API requests)
+
+Tailwind CSS / Bootstrap (for styling)
+
+RAWG API
+
+Installation
+
+To run this project locally:
+
+Clone the repository:
+
+git clone https://github.com/your-username/game-shop.git
+
+Navigate to the project directory:
+
+cd game-shop
+
+Install dependencies:
+
+npm install
+
+Create a .env file and add your RAWG API key:
+
+REACT_APP_RAWG_API_KEY=your_api_key_here
+
+Start the development server:
+
+npm start
+
+Screenshots
+
+(Screenshots will be added soon)
+
+Status
+
+🚧 This project is still in development.
+
+New features and improvements are being added regularly.
+
+Code is continuously being committed and refined.
+
+Contributing
+
+If you'd like to contribute, feel free to fork the repository and submit a pull request

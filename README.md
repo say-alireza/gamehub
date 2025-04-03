@@ -16,7 +16,7 @@ This project is a game shop website built using React, inspired by [RAWG.io](htt
 - **React.js**
 - **React Router**
 - **Axios** (for API requests)
-- **Tailwind CSS / Bootstrap** (for styling)
+- **Chakra UI** (for styling)
 - **RAWG API**
 
 ## Installation

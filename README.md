@@ -7,7 +7,7 @@
 
 A modern game shop website built with React, powered by RAWG.io's API.
 
-![Game Shop Preview](https://via.placeholder.com/800x400?text=Game+Shop+Preview) *(Replace with actual screenshot)*
+![Preview](https://github.com/user-attachments/assets/8c3a853c-e467-468a-9067-b6b5bf2f7ace)
 
 ## ✨ Features
 

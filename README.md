@@ -1,50 +1,4 @@
-# Game Shop - React Project
 
-## Overview
-
-This project is a game shop website built using React, inspired by [RAWG.io](https://rawg.io/). The application fetches data from RAWG's API to display detailed information about video games, including their genres, ratings, platforms, and more.
-
-## Features
-
-- **Browse and search** for video games.
-- **View detailed information** about each game.
-- **Responsive design** for a seamless experience across different devices.
-- **Dynamic data fetching** from RAWG API.
-
-## Technologies Used
-
-- **React.js**
-- **React Router**
-- **Axios** (for API requests)
-- **Chakra UI** (for styling)
-- **RAWG API**
-
-## Installation
-
-To run this project locally:
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/game-shop.git
-
-# Screenshots
-(Screenshots will be added soon)
-
-# Status
-🚧 This project is still in development.
-
-New features and improvements are being added regularly.
-
-Code is continuously being committed and refined.
-
-Contributing
-If you'd like to contribute, feel free to fork the repository and submit a pull request!
-
-make this into a read me format so that i can copy and paste in my github
-Here's a polished README.md format for your GitHub repository that you can copy and paste directly:
-
-markdown
-Copy
 # Game Shop - React Project
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -66,7 +20,7 @@ A modern game shop website built with React, powered by RAWG.io's API.
 ## 🛠 Technologies Used
 
 - **Frontend**: React.js, React Router
-- **Styling**: Tailwind CSS / Bootstrap
+- **Styling**: Chakra UI
 - **API**: RAWG Video Games Database API
 - **State Management**: Context API / Redux (if used)
 - **HTTP Client**: Axios
